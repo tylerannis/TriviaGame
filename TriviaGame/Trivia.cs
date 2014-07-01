@@ -8,6 +8,7 @@ namespace TriviaGame
 {
     class Trivia
     {
-     
+        //TODO: Fill out the Trivia Object
+        
     }
 }
