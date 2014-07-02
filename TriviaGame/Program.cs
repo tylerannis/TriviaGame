@@ -11,8 +11,8 @@ namespace TriviaGame
     {
         static void Main(string[] args)
         {
-            //Trivia game function goes here
-
+            //The logic for your trivia game happens here
+            List<Trivia> AllQuestions = GetTriviaList();
         }
 
 
@@ -28,7 +28,7 @@ namespace TriviaGame
             List<Trivia> returnList = new List<Trivia>();
             // TODO: go through each line in contents of the trivia file and make a trivia object.
             //       add it to our return list.
-            
+            // Example: Trivia newTrivia = new Trivia("what is my name?*question");
             //Return the full list of trivia questions
             return returnList;
         }
