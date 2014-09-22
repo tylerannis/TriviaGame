@@ -47,6 +47,6 @@ namespace TriviaGame
         {
             return this.Answer.ToLower();
         }
-
+    
     }
 }
