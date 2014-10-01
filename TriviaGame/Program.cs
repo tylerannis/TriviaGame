@@ -18,8 +18,21 @@ namespace TriviaGame
             Console.WriteLine("Hello and welcome to the almost decent trivia game! What is your name?");
             string name = Console.ReadLine();
             //print new greeting and rules with name
-            Console.WriteLine("Hey there " + name + ". We are going to ask you a few questions and if you get them right you could earn up to 5000 useless points!\nOn the other hand... if you get just five questions wrong, you will lose and your name will not go down in history.");
-            Console.WriteLine("Let's play Who's A Big Fat Nerd!\n");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Hey there " + name + ". We are going to ask you a few questions and if you get them \nright you could earn up to 5000 useless points!\nOn the other hand... if you get just five questions wrong, you will lose and \nyour name will not go down in the history of....");
+           
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(@"
+ _____    _       _       
+|_   _|  (_)     (_)      
+  | |_ __ ___   ___  __ _ 
+  | | '__| \ \ / / |/ _` |
+  | | |  | |\ V /| | (_| |
+  \_/_|  |_| \_/ |_|\__,_|
+                          
+                          
+");
+            Console.ForegroundColor = ConsoleColor.White;
             //set variables for number of wrong guesses
             int lives = 5;
             int score = 0;
@@ -44,7 +57,7 @@ namespace TriviaGame
                   //add one to their score
                   currentscore++;
                   //display good job and their lives and their score
-                  Console.WriteLine("[Your Score: {0}]", currentscore + "\n[Your Lives: {1}]", lives);
+                  Console.WriteLine("[Your Score: {0}]", currentscore + "\n[Your Lives: " + lives +"]");
                   Console.WriteLine("\n\n\nGreat job! I can't believe you knew that! Your get a point!");
               }
               else
